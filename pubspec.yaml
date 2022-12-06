@@ -1,0 +1,21 @@
+name: platform_os
+description: It also supports the web with packages that return widgets depending on the platform OS.
+version: 1.0.0
+publisher: a41417144@gmail.com
+repository: ''
+
+environment:
+  sdk: '>=2.18.5 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  macos_ui: ^1.7.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.1
