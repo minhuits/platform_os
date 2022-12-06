@@ -1,6 +1,6 @@
 name: platform_os
 description: It also supports the web with packages that return widgets depending on the platform OS.
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/minhuits/platform_os
 
 environment:

@@ -1,5 +1,5 @@
 # Platform OS
-<img src="./images/image.png" width="70%" height="80%" alt=""/>
+<img src="https://github.com/minhuits/platform_os/blob/master/images/image.png?raw=true" width="70%" height="80%" alt=""/>
 
 ### Korean
 `PlatformOS`는 플랫폼(android, ios, fuchsia, linux, macos, windows, web)에 따라 
