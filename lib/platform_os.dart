@@ -2,7 +2,6 @@ library platform_os;
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:macos_ui/macos_ui.dart';
 
 /// [Korean]
 ///
@@ -67,61 +66,19 @@ class PlatformOS extends StatelessWidget {
   }
 
   /// [Korean]
-  ///
-  /// [themeData]는 현재 플랫폼을 기준으로 [ThemeData] 객체를 반환하는 함수입니다.
-  ///
-  /// Args:
-  ///
-  ///   android ([ThemeData]): [Android]용 [ThemeData]입니다.
-  ///
-  ///   iOS ([ThemeData]): [iOS]용 [ThemeData]입니다..
-  ///
-  ///   macOS ([MacosThemeData]): [macOS]용 [MacosThemeData]입니다.
-  ///
-  ///   windows ([ThemeData]): [Windows]용 [ThemeData]입니다.
-  ///
-  ///   linux ([ThemeData]): [Linux]용 [ThemeData]입니다.
-  ///
-  ///   fuchsia ([ThemeData]): [Fuchsia]용 [ThemeData]입니다.
-  ///
-  ///   web  ([ThemeData]): [Web]용 [ThemeData]입니다.
-  ///
-  /// Returns:
-  ///   [TargetPlatform]을 가져와 [ThemeData]를 반환하는 함수입니다.
-  ///
-  ///
+  /// 플랫폼을 기반으로 [themeData]를 반환하는 함수.
   ///
   /// [English]
-  ///
-  /// [themeData] is a function that returns a [ThemeData] object based on the
-  /// current platform
-  ///
-  /// Args:
-  ///   android ([ThemeData]): [ThemeData] for [Android].
-  ///
-  ///   iOS ([ThemeData]): [ThemeData] for [iOS].
-  ///
-  ///   macOS ([MacosThemeData]): [MacosThemeData] for [macOS].
-  ///
-  ///   windows ([ThemeData]): [ThemeData] for [Windows].
-  ///
-  ///   linux ([ThemeData]):  [ThemeData] for [Linux].
-  ///
-  ///   fuchsia ([ThemeData]):  [ThemeData] for [Fuchsia].
-  ///
-  ///   web ([ThemeData]):  [ThemeData] for [Web].
-  ///
-  /// Returns:
-  ///   A function that takes a [TargetPlatform] and returns a [ThemeData].
+  /// A function that returns a [themeData] based on the platform.
   ///
   static themeData({
-    ThemeData? android,
-    ThemeData? iOS,
-    ThemeData? fuchsia,
-    MacosThemeData? macOS,
-    ThemeData? windows,
-    ThemeData? linux,
-    ThemeData? web,
+    Diagnosticable? android,
+    Diagnosticable? iOS,
+    Diagnosticable? fuchsia,
+    Diagnosticable? macOS,
+    Diagnosticable? windows,
+    Diagnosticable? linux,
+    Diagnosticable? web,
   }) {
     return _themeMaps(
       platform: defaultTargetPlatform,
@@ -137,13 +94,13 @@ class PlatformOS extends StatelessWidget {
 
   static Diagnosticable _themeMaps({
     required TargetPlatform platform,
-    ThemeData? android,
-    ThemeData? iOS,
-    ThemeData? fuchsia,
-    MacosThemeData? macOS,
-    ThemeData? windows,
-    ThemeData? linux,
-    ThemeData? web,
+    Diagnosticable? android,
+    Diagnosticable? iOS,
+    Diagnosticable? fuchsia,
+    Diagnosticable? macOS,
+    Diagnosticable? windows,
+    Diagnosticable? linux,
+    Diagnosticable? web,
   }) {
     if (kIsWeb) return web!;
 

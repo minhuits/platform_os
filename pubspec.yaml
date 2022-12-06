@@ -1,6 +1,6 @@
 name: platform_os
 description: It also supports the web with packages that return widgets depending on the platform OS.
-version: 1.0.1
+version: 1.0.2
 repository: https://github.com/minhuits/platform_os
 
 environment:
@@ -10,8 +10,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-  macos_ui: ^1.7.5
 
 dev_dependencies:
   flutter_test:

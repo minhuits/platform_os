@@ -1,6 +1,15 @@
 # Platform OS
 <img src="https://github.com/minhuits/platform_os/blob/master/images/image.png?raw=true" width="70%" height="80%" alt=""/>
 
+### Platform Support
+1. Android ✅
+2. iOS ✅
+3. MacOS ✅
+4. Windows ✅
+5. Linux ✅
+6. Fuchsia ✅
+7. Web ✅
+
 ### Korean
 `PlatformOS`는 플랫폼(android, ios, fuchsia, linux, macos, windows, web)에 따라 
 `widget`을 정의하는 데 도움을 주는 패키지입니다.
